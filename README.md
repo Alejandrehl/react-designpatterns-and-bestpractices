@@ -9,7 +9,7 @@ Babel can compile ES2015 into ES5 JavaScript, as well as compile JSX into JavaSc
 1. yarn global add eslint
 2. create .eslintrc in root folder
 3. Try this code (Disable semicolon)
-    - 
+
         {
           "rules": {
             "semi": [2, "never"]
@@ -24,3 +24,9 @@ ESLint rules have three levels, which determine the severity of the problem.
 * error or 2: The rule throws an error
 
 The second parameter tells ESLint that we want the semicolon never to be used (the opposite is always).
+
+We can enable and disable every single rule manually, or we can enable the recommended configuration in one go by putting the following code into our .eslintrc:
+    
+    {
+       "extends": "eslint:recommended"
+    }
